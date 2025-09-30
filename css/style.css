@@ -1,65 +1,112 @@
-body{
+@import url("https://cdn.web-fonts.ge/fonts/alk-rounded-nusx-med/css/alk-rounded-nusx-med.min.css");
+body {
     margin: 0 auto;
 }
-h1,h2,h3,h4,h5,h6,p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
-header{
-    background-color: white;
+
+header {
+    background-color: #0A22F4;
+}
+
+.header-section {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 40px 0;
 }
-.navigation-list{
+
+.navigation-list {
     display: flex;
     list-style: none;
     padding: 0;
 }
-.logo{
+
+.logo {
     width: auto;
     height: fit-content;
     margin: auto 0;
 }
-.navigation-list li{
+
+.navigation-list li {
     padding: 10px 25px;
+    margin: auto;
 }
-.navigation-list li a{
-    font-size: 20px;
-    color: #707070;
+
+.navigation-list li a {
+    font-size: 16px;
+    color: #FFFFFF;
     text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
-main{
-    height: 100vh;
+
+.services-header {
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-family: "ALK Rounded Nusx Med", sans-serif;
 }
-footer{
-    background-color: #2E2E2E;
-}
-.footer-div{
-    max-width: 1140px;
-    margin: 0 auto;
+
+.row {
     display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
 }
-.footer-headers{
-    font-size: 20px;
-    color: #FFFFFF;
+
+.cl-4 {
+    width: 33%;
 }
-.footer-text{
-    font-size: 13px;
-    color: #FFFFFF;
+
+.cl-4:nth-child(2) {
+    margin: 0 25px;
 }
-.footer-icons img{
-    width: 45px;
-    height: 45px;
-    padding: 0 17px;
+
+.services-section .cl-4 h5 {
+    font-family: "ALK Rounded Nusx Med", sans-serif;
+    font-size: 22px;
+    padding: 40px 0 20px 0;
 }
-.container{
+
+.navigation-list li a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.header-contact-button button {
+    padding: 18px 36px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.colored-box {
+    background-color: #F9F9F9;
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+.colored-box.active {
+    background-color: #0A22F4;
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+.container {
     max-width: 1140px;
     margin: auto;
 }
-.container img{
+
+.container img {
     width: 100%;
 }
