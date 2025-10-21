@@ -1,90 +1,93 @@
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #f9f9fb;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-.technology-section {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-h2 {
-    font-weight: 400;
-    color: #888;
-    margin-bottom: 10px;
-}
-
-h1 {
-    font-weight: 600;
-    color: #2d2f55;
-    margin-bottom: 15px;
-}
-
-h1 span {
-    color: #4e5ff1;
-}
-
-.subtitle {
-    color: #777;
-    max-width: 600px;
-    margin: 0 auto 60px;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-.cards {
+    background: #00108c;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.card {
-    background-color: #fff;
-    width: 270px;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    position: relative;
-    transition: transform 0.3s ease;
-    text-align: left;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    gap: 8px;
+    background: #00108c;
+    width: 80%;
+    max-width: 1200px;
 }
 
-.card h3 {
-    margin-top: 0;
-    color: #2d2f55;
+.item {
+    background: white;
+    color: #00108c;
+    font-family: Arial, sans-serif;
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.card p {
-    color: #777;
-    font-size: 0.9rem;
-    line-height: 1.5;
+.lorem {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
 }
 
-.icon img {
-    margin-left: auto;
-    display: block;
+.culpa {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
-.border-teal {
-    border-top: 4px solid #2dd4bf;
+.officia {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
 }
 
-.border-red {
-    border-top: 4px solid #f43f5e;
+.mollit {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
 }
 
-.border-blue {
-    border-top: 4px solid #3b82f6;
+.fugiat {
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
 }
 
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
+.exercitation {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.magna {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.laboris {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+}
+
+.ullamco {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.consectetur {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+
+.pariatur {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.dolore {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+.excepteur {
+    grid-column: 3 / 5;
+    grid-row: 5 / 6;
 }
