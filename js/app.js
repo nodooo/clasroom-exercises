@@ -1,21 +1,44 @@
-let name = "nodar";
+// exercise 1
+const numbers = [7, 1, 3, 6, 16];
 
-let age = 28;
-let temperature = 23.5;
+let sum = 0;
 
-let isStudent = true;
+for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}
 
-let dayOfWeek = "Friday";
+const average = sum / numbers.length;
 
-let favoriteActivity = "Watching Anime";
+console.log("sum:", sum);
+console.log("average:", average);
 
-let fixText = "Hi, my name is " + name + "! Today is " + dayOfWeek + ", a perfect day for " + favoriteActivity + ".";
+// exercise 2
+const iPhone = {
+    productName: "iPhone 17 Pro Max",
+    memory: "1TB",
+    isAvailableAt: ["Iplus main office"]
+};
 
 
-console.log("name:", name);
-console.log("age:", age);
-console.log("temperature:", temperature);
-console.log("student?:", isStudent);
-console.log("day of week:", dayOfWeek);
-console.log("favourite acivity:", favoriteActivity);
-console.log(fixText);
+console.log(iPhone.productName + " with " + iPhone.memory + " memory is available at " + iPhone.isAvailableAt + ".");
+
+
+// exercise 3
+const books = [{
+        title: "soul of samurai",
+        author: "author1",
+        yearPublished: 2012
+    },
+    {
+        title: "other book",
+        author: "author2",
+        yearPublished: 2013
+    },
+    {
+        title: "other book 2",
+        author: "author 3",
+        yearPublished: 2015
+    }
+];
+
+console.log(books);
